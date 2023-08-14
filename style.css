@@ -1,24 +1,78 @@
 *{
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
-    background-color: antiquewhite;
+    background-color: rgb(232, 204, 167);
+}
+header {
+	margin: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	width: 100%;
 }
 nav{
+    position: fixed;
+    background-color: beige;
     border-bottom: 2px black solid;
     width: 100vw;
     display: flex;
-    margin: 2% 0 2% 0;
+    height: 10%;
 }
 nav h1{
-    margin-bottom: 2rem;
+    margin: 1rem;
 }
 .links-nav{
     float: center;
     position: relative;
-    
-    padding-left: 66rem;
+    padding-left: 63rem;
     margin-top: 1.4rem;
-    
-    
+}
+a{
+    text-decoration:underline;
+    color: rgb(31, 26, 26);
+    padding-right: 0.6rem;
+}
+i{
+    cursor: pointer;
+}
+img{
+    width:30%;
+}
+footer{
+    background-color: beige;
+    display: inline-block;
+    width: 100vw;
+    height: 30vh;
+}
+/*footer h4{
+    margin:5rem;
+    text-align: left;
+    display: inline-flex;
+    border: 1px red solid;
+    margin-top: 4rem;
+}*/
+footer img {
+    width: 15%;
+    padding-left: 4rem;
+}
+
+.links-footer{
+    display: inline;
+    position: inline;
+    float: right;
+    padding: 4.5rem 10rem 0 0;
+}
+.icons-footer{
+    display: inline;
+    position: inline;
+    float: right;
+    padding: 4.5rem 10rem 0 0;
+}
+.creditos-img{
+    display: inline;
+    position: inline;
+    float: right;
+    padding: 4.5rem 10rem 0 0;
 }
