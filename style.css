@@ -96,3 +96,21 @@ footer img {
     float: right;
     padding: 4.5rem 10rem 0 0;
 }
+.creditos-img-cardapio{
+    display: inline;
+    position: inline;
+    float: right;
+    padding: 4.5rem 17rem 0 0;
+}
+.creditos-main{
+    padding: 14%;
+    text-align: center;
+}
+.creditos-img-cardapios{
+    columns: 3;
+    padding: 4.5rem 17rem 0;
+}
+.centraliza-sobre{
+    text-align: center;
+    
+}
