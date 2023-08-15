@@ -1,9 +1,11 @@
 *{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 body{
     background-color: rgb(232, 204, 167);
+    overflow-x: hidden;
 }
 header {
 	margin: 0;
@@ -26,7 +28,7 @@ nav h1{
 .links-nav{
     float: center;
     position: relative;
-    padding-left: 63rem;
+    padding-left: 60rem;
     margin-top: 1.4rem;
 }
 a{
@@ -36,6 +38,24 @@ a{
 }
 i{
     cursor: pointer;
+}
+.banner{
+    padding-top: 12rem;
+    background-image: url(/images/banner-pimenta.jpg);
+    height: 350px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100vw;
+}
+.banner h2{
+    text-align: center;
+    color: rgb(245, 237, 237);
+    padding-top: 5%;
+}
+main section{
+    margin: 0 4rem 4rem 4rem;
+    padding-top: 8rem;
 }
 img{
     width:30%;
