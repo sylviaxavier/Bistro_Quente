@@ -42,7 +42,7 @@ i{
 .banner{
     padding-top: 12rem;
     background-image: url(/images/banner-pimenta.jpg);
-    height: 350px; 
+    height: 400px; 
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover; 
@@ -66,31 +66,11 @@ footer{
     width: 100vw;
     height: 30vh;
 }
-/*footer h4{
-    margin:5rem;
-    text-align: left;
-    display: inline-flex;
-    border: 1px red solid;
-    margin-top: 4rem;
-}*/
 footer img {
     width: 15%;
     padding-left: 4rem;
 }
-
-.links-footer{
-    display: inline;
-    position: inline;
-    float: right;
-    padding: 4.5rem 10rem 0 0;
-}
-.icons-footer{
-    display: inline;
-    position: inline;
-    float: right;
-    padding: 4.5rem 10rem 0 0;
-}
-.creditos-img{
+.footer{
     display: inline;
     position: inline;
     float: right;
@@ -110,7 +90,61 @@ footer img {
     columns: 3;
     padding: 4.5rem 17rem 0;
 }
-.centraliza-sobre{
+.centraliza{
     text-align: center;
-    
+}
+/*Home*/
+.display-flex{
+    display: flex;
+}
+.titulo-section-home{
+    text-align: center;
+    padding: 8rem 0 0 0;
+}
+.delivery img{
+    position: relative;
+    float: center;
+    padding: 0rem 7rem 0 7rem;
+    margin: 0;
+    border-radius: 90%;
+}
+.delivery p{
+    padding-top: 2rem;
+    padding-left: 7rem;
+    width: 50%;
+    margin: 0;
+}
+.localizacao img{
+    position: absolute;
+    float: left;
+    padding: 0rem 7rem 0 10rem;
+    width: 26%;
+    border-radius: 90%;
+}
+.localizacao p{
+    padding-top: 2rem;
+    padding-left: 40rem;
+    padding-bottom: 17rem;
+    width: 40%;
+    margin: 0;
+}
+/*Card cardapio*/
+.cards-container{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-cardapio{
+    border: 2px solid rgba(232, 204, 167, 0.432);
+    width: 270px;
+    padding-top: 0;
+    background-color: beige;
+}
+.card-cardapio img{
+    width: 100%;
+}
+.card-cardapio p,h5{
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
 }
