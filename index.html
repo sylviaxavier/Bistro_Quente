@@ -6,7 +6,9 @@
     <title>Bistrô Quente</title>
     <link rel="shortcut icon" href="./images/Bistrô_Quente_logo-semFundo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -18,6 +20,17 @@
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+
+              <div class="dropdown-menu">
+                <li><a href="./pages/sobre.html">Sobre nós</a></li>
+                <li><a href="./pages/cardapio.html">Cardápio</a></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+              </div>
         </nav>
     </header>
     <main>
@@ -58,5 +71,19 @@
             <p><a href="https://www.freepik.com/free-vector/travel-road-street-map-with-location-pin-symbol-vector-illustration_1158224.htm#query=mapa%20gps&position=2&from_view=search&track=country_rows_v1">Image by macrovector</a> on Freepik</p>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+    
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+    
+          toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark fa-2x'
+            : 'fa-solid fa-bars fa-2x'
+        }
+      </script>
 </body>
 </html>

@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-body{
+
+body {
     background-color: rgb(232, 204, 167);
     overflow-x: hidden;
 }
+
 header {
-	margin: 0;
-	position: sticky;
-	top: 0;
-	z-index: 100;
-	width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
-nav{
+
+nav {
     position: fixed;
     background-color: beige;
     border-bottom: 2px black solid;
@@ -22,129 +24,298 @@ nav{
     display: flex;
     height: 10%;
 }
-nav h1{
+
+nav h1 {
     margin: 1rem;
 }
-.links-nav{
+
+.links-nav {
     float: center;
     position: relative;
     padding-left: 60rem;
     margin-top: 1.4rem;
 }
-a{
-    text-decoration:underline;
+
+a {
+    text-decoration: underline;
     color: rgb(31, 26, 26);
     padding-right: 0.6rem;
 }
-i{
+
+i {
     cursor: pointer;
 }
-.banner{
+
+header .toggle-btn {
+    color: black;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: none;
+    padding-top: 0.5rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(169, 23, 209, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    margin: 1.2rem;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 1rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a {
+    color: black;
+}
+
+.banner {
     padding-top: 12rem;
     background-image: url(./images/banner-pimenta.jpg);
-    height: 400px; 
-    background-position: center; 
+    height: 400px;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     width: 100vw;
 }
-.banner h2{
+
+.banner h2 {
     text-align: center;
     color: rgb(245, 237, 237);
     padding-top: 5%;
 }
-main section{
+
+main section {
     margin: 0 4rem 4rem 4rem;
     padding-top: 8rem;
 }
-img{
-    width:30%;
+
+img {
+    width: 30%;
 }
-footer{
+
+footer {
     background-color: beige;
     display: inline-block;
     width: 100vw;
     height: 30vh;
 }
+
 footer img {
     width: 15%;
     padding-left: 4rem;
 }
-.footer{
+
+.footer {
     display: inline;
     position: inline;
     float: right;
     padding: 4.5rem 10rem 0 0;
 }
-.creditos-img-cardapio{
+
+.creditos-img-cardapio {
     display: inline;
     position: inline;
     float: right;
     padding: 4.5rem 17rem 0 0;
 }
-.creditos-main{
+
+.creditos-main {
     padding: 14%;
     text-align: center;
 }
-.creditos-img-cardapios{
+
+.creditos-img-cardapios {
     columns: 3;
     padding: 4.5rem 17rem 0;
 }
-.centraliza{
+
+.centraliza {
     text-align: center;
 }
+
 /*Home*/
-.display-flex{
+.display-flex {
     display: flex;
 }
-.titulo-section-home{
+
+.titulo-section-home {
     text-align: center;
     padding: 8rem 0 0 0;
 }
-.delivery img{
+
+.delivery img {
     position: relative;
     float: center;
     padding: 0rem 7rem 0 7rem;
     margin: 0;
     border-radius: 90%;
 }
-.delivery p{
+
+.delivery p {
     padding-top: 2rem;
     padding-left: 7rem;
     width: 50%;
     margin: 0;
 }
-.localizacao img{
+
+.localizacao img {
     position: absolute;
     float: left;
     padding: 0rem 7rem 0 10rem;
     width: 26%;
     border-radius: 90%;
 }
-.localizacao p{
+
+.localizacao p {
     padding-top: 2rem;
     padding-left: 40rem;
     padding-bottom: 17rem;
     width: 40%;
     margin: 0;
 }
+
 /*Card cardapio*/
-.cards-container{  
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.card-cardapio{
+
+.card-cardapio {
     border: 2px solid rgba(232, 204, 167, 0.432);
     width: 270px;
     padding-top: 0;
     background-color: beige;
 }
-.card-cardapio img{
+
+.card-cardapio img {
     width: 100%;
 }
-.card-cardapio p,h5{
+
+.card-cardapio p,
+h5 {
     padding: 15px;
     font-weight: bold;
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    nav ul {
+        display: none;
+    }
+
+    header .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav h1 {
+        padding-right: 4rem;
+    }
+
+    .links-nav {
+        display: none;
+    }
+
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .display-flex {
+        display: block;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    main section {
+        margin: 0;
+        padding-top: 4rem;
+    }
+
+    .delivery p,
+    .localizacao p {
+        padding: 2%;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .localizacao img {
+        position: relative;
+        width: 30%;
+        padding: 4rem 5rem 4rem 5rem;
+        float: right;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 5rem 2rem 1rem;
+    }
+
+    footer img {
+        width: 50%;
+        padding: 0;
+    }
+
+    .centraliza {
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+    }
+
+    .centraliza img {
+        width: 50%;
+    }
+
+    .centraliza p {
+        padding: 5%;
+        text-align: justify;
+    }
+
+    .card-cardapio {
+        margin-bottom: 3rem;
+    }
+
+    .creditos-img-cardapio {
+        padding: 0;
+    }
+
+    .creditos-main h2 {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .creditos-img-cardapios {
+        padding: 5%;
+    }
 }

@@ -19,6 +19,16 @@
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+
+              <div class="dropdown-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pages/sobre.html">Sobre nós</a></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+              </div>
         </nav>
     </header>
     <main>
@@ -117,5 +127,19 @@
             <a href="./creditos.html">Créditos</a>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+    
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+    
+          toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark fa-2x'
+            : 'fa-solid fa-bars fa-2x'
+        }
+      </script>
 </body>
 </html>
